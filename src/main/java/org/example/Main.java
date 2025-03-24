@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 import exception.CalculadoraExceptionHandler;
-import factory.Factory;
+import factory.Prototype;
 import model.Operacao;
 
 public class Main {
@@ -49,7 +49,7 @@ public class Main {
                         break;
                 }
 
-                Operacao operacao = Factory.factory(operacaoStr);
+                Operacao operacao = Prototype.getOperacao(operacaoStr);
                 if (operacao != null) {
                     try {
                         resultado = operacao.operar(valor1, valor2);
@@ -82,7 +82,7 @@ public class Main {
                 return scanner.nextInt();
             } else {
                 System.out.println("Entrada inválida. Por favor, digite um número inteiro.");
-                scanner.next(); 
+                scanner.next();
             }
         }
     }

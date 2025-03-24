@@ -1,4 +1,5 @@
 package exception;
+
 public class CalculadoraExceptionHandler {
     public static void tratarExcecao(Exception e) {
         if (e instanceof ArithmeticException) {
@@ -8,4 +9,3 @@ public class CalculadoraExceptionHandler {
         }
     }
 }
-

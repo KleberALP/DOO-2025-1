@@ -14,6 +14,8 @@ target/
 *.xml
 *.idea
 
+*.metadata
+
 ### Eclipse ###
 .apt_generated
 .classpath
