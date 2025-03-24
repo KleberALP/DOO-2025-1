@@ -19,7 +19,6 @@ public class Main {
             opcoes();
             opcao = lerInteiro(scanner, "Escolha uma opção válida:");
 
-            // Se a opção for inválida, apenas exibe a mensagem e volta ao menu
             if (opcao < 0 || opcao > 4) {
                 System.out.println("Opção inválida.\n");
                 continue;
@@ -83,7 +82,7 @@ public class Main {
                 return scanner.nextInt();
             } else {
                 System.out.println("Entrada inválida. Por favor, digite um número inteiro.");
-                scanner.next(); // Limpa o valor inválido do buffer
+                scanner.next(); 
             }
         }
     }
